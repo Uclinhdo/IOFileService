@@ -47,17 +47,17 @@ public class FileService {
         this.writer = writer;
     }
    
-    public static void main(String[] args) throws IOException {
-        TextFormatStrategy formatter = new CustomGarageFormat();
-        String filePath = "src" + File.separatorChar + "custom_garage_format.txt";
-        TextReaderStrategy readerApp = new TextFileReader(filePath,formatter);
-        TextWriterStrategy writerApp = new TextFileWriter(filePath,formatter);
-        FileService fileService = new FileService(readerApp,writerApp);
-        
-        List<Map<String,String>> result = fileService.readFile();
-        fileService.writeFile(result);
-        System.out.println(result);
-    }
+//    public static void main(String[] args) throws IOException {
+//        TextFormatStrategy formatter = new CustomGarageFormat();
+//        String filePath = "src" + File.separatorChar + "custom_garage_format.txt";
+//        TextReaderStrategy readerApp = new TextFileReader(filePath,formatter);
+//        TextWriterStrategy writerApp = new TextFileWriter(filePath,formatter);
+//        FileService fileService = new FileService(readerApp,writerApp);
+//        
+//        List<Map<String,String>> result = fileService.readFile();
+//        fileService.writeFile(result);
+//        System.out.println(result);
+//    }
    
     
 }
